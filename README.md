@@ -23,7 +23,7 @@
 ### To compile the latest version of the JavaScript client, on Windows:
 
 1. Make sure you have at Java 17 installed and added to your PATH
-    I recommend [Eclipse Temurin](https://adoptium.net/)
+    > I recommend [Eclipse Temurin](https://adoptium.net/)
 2. Download (clone) this repository to your computer
 3. Double click `CompileLatestClient.bat`, a GUI resembling a classic windows installer should open
 4. Follow the steps shown to you in the new window to finish compiling
@@ -31,7 +31,7 @@
 ### To compile the latest version of the JavaScript client, on Linux/macOS:
 
 1. Make sure you have at Java 17 installed
-    I recommend [Eclipse Temurin](https://adoptium.net/)
+    > I recommend [Eclipse Temurin](https://adoptium.net/)
 2. Download (clone) this repository to your computer
 3. Open a terminal in the folder the repository was cloned to
 4. Type `chmod +x CompileLatestClient.sh` and hit enter
