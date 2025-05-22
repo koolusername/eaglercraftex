@@ -1,7 +1,7 @@
 
-# EaglercraftX 1.8
+# eaglercraftex
 
-### Play Minecraft 1.8 in your browser, supports singleplayer and multiplayer
+### EaglercraftX extended by yours truely
 
 ![EaglercraftX 1.8 Screenshot Main Menu](https://deev.is/eagler/cors/eagler-1.8-u22-titlescreen-480p.png)
 
@@ -22,14 +22,16 @@
 
 ### To compile the latest version of the JavaScript client, on Windows:
 
-1. Make sure you have at least Java 11 installed and added to your PATH, it is recommended to use Java 17
+1. Make sure you have at Java 17 installed and added to your PATH
+    I recommend [Eclipse Temurin](https://adoptium.net/)
 2. Download (clone) this repository to your computer
 3. Double click `CompileLatestClient.bat`, a GUI resembling a classic windows installer should open
 4. Follow the steps shown to you in the new window to finish compiling
 
 ### To compile the latest version of the JavaScript client, on Linux/macOS:
 
-1. Make sure you have at least Java 11 installed, it is recommended to use Java 17
+1. Make sure you have at Java 17 installed
+    I recommend [Eclipse Temurin](https://adoptium.net/)
 2. Download (clone) this repository to your computer
 3. Open a terminal in the folder the repository was cloned to
 4. Type `chmod +x CompileLatestClient.sh` and hit enter
