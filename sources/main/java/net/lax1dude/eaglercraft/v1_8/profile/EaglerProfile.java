@@ -455,8 +455,8 @@ public class EaglerProfile {
 
 	static {
 		String[] defaultNames = new String[] {
-				"Yeeish", "Yeeish", "Yee", "Yee", "Yeer", "Yeeler", "Eagler", "Eagl",
-				"Darver", "Darvler", "Vool", "Vigg", "Vigg", "Deev", "Yigg", "Yeeg"
+				"max", "leo", "eve", "ray", "mia", "sam", "kai", "zoe",
+				"ben", "lily", "jude", "ara", "nik", "sky", "ivy", "jax"
 		};
 		
 		rand = new EaglercraftRandom();
