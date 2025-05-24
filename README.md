@@ -25,7 +25,7 @@
 1. Make sure you have Java 17 and FFMPEG installed and added to your PATH
     > I recommend [Eclipse Temurin](https://adoptium.net/)
     
-    > I recommend using [chocolatey](https://chocolatey.org/) for the installation of FFMPEG
+    > I recommend using [Chocolatey](https://chocolatey.org/) for the installation of FFMPEG
 2. Download (clone) this repository to your computer
 3. Double click `CompileLatestClient.bat`, a GUI resembling a classic windows installer should open
 4. Follow the steps shown to you in the new window to finish compiling
