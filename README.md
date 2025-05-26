@@ -32,7 +32,7 @@
 
 ### To compile the latest version of the JavaScript client, on Linux/macOS:
 
-1. Make sure you have Java 17 and FFMPEG installed
+1. Make sure you have Java 17 (though any LTS over 17 should work) and FFMPEG installed
     > I recommend [Eclipse Temurin](https://adoptium.net/)
 2. Download (clone) this repository to your computer
 3. Open a terminal in the folder the repository was cloned to
