@@ -22,7 +22,7 @@
 
 ### To compile the latest version of the JavaScript client, on Windows:
 
-1. Make sure you have Java 17 and FFMPEG installed and added to your PATH
+1. Make sure you have Java 17 (though any LTS over 17 should work) and FFMPEG installed and added to your PATH
     > I recommend [Eclipse Temurin](https://adoptium.net/)
     
     > I recommend using [Chocolatey](https://chocolatey.org/) for the installation of FFMPEG
