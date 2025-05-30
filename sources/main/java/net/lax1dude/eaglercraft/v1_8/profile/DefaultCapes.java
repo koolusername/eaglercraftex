@@ -57,7 +57,7 @@ public enum DefaultCapes {
 	HOME(34, "Home", new ResourceLocation("eagler:capes/34.home.png")),
 	MENACE(35, "Menace", new ResourceLocation("eagler:capes/35.menace.png"));
 
-	public static final DefaultCapes[] defaultCapesMap = new DefaultCapes[34];
+	public static final DefaultCapes[] defaultCapesMap = new DefaultCapes[36];
 
 	public final int id;
 	public final String name;
