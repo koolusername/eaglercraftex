@@ -1,7 +1,7 @@
 
-# eaglercraftex
+# EaglercraftX 1.8
 
-### EaglercraftX extended by yours truely
+### Play Minecraft 1.8 in your browser, supports singleplayer and multiplayer
 
 ![EaglercraftX 1.8 Screenshot Main Menu](https://deev.is/eagler/cors/eagler-1.8-u22-titlescreen-480p.png)
 
@@ -22,18 +22,14 @@
 
 ### To compile the latest version of the JavaScript client, on Windows:
 
-1. Make sure you have Java 17 (though any LTS over 17 should work) and FFMPEG installed and added to your PATH
-    > I recommend [Eclipse Temurin](https://adoptium.net/)
-    
-    > I recommend using [Chocolatey](https://chocolatey.org/) for the installation of FFMPEG
+1. Make sure you have at least Java 11 installed and added to your PATH, it is recommended to use Java 17
 2. Download (clone) this repository to your computer
 3. Double click `CompileLatestClient.bat`, a GUI resembling a classic windows installer should open
 4. Follow the steps shown to you in the new window to finish compiling
 
 ### To compile the latest version of the JavaScript client, on Linux/macOS:
 
-1. Make sure you have Java 17 (though any LTS over 17 should work) and FFMPEG installed
-    > I recommend [Eclipse Temurin](https://adoptium.net/)
+1. Make sure you have at least Java 11 installed, it is recommended to use Java 17
 2. Download (clone) this repository to your computer
 3. Open a terminal in the folder the repository was cloned to
 4. Type `chmod +x CompileLatestClient.sh` and hit enter
@@ -166,6 +162,8 @@ The default eaglercraftXOpts values is this:
 - `singleThreadMode:` if the game should run the client and integrated server in the same context instead of creating a worker object
 - `enableEPKVersionCheck:` if the game should attempt to bypass the browser's cache and retry downloading assets.epk when its outdated
 - `enforceVSync:` (WASM only) if the game should automatically re-enable VSync at launch if its disabled
+- `keepAliveHack:` if the game should embed a looping `<audio>` tag to keep the tab from becoming inactive on Chrome
+- `finishOnSwap:` if the WebGL `finish` function should be called after every frame when VSync is disabled
 - `hooks:` can be used to define JavaScript callbacks for certain events
     * `localStorageSaved:` JavaScript callback to save local storage keys (key, data)
     * `localStorageLoaded:` JavaScript callback to load local storage keys (key) returns data
