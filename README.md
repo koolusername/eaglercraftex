@@ -38,7 +38,7 @@
 
 ### To set up the development environment
 
-1. Prepare the required files in the mcp918 folder ([readme](mcp918/readme.txt))
+1. Run the `download_files` script in the [mcp918 folder](mcp918)
 2. Run the `build_init` script
 3. Run the `build_make_workspace` script
 

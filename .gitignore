@@ -6,5 +6,7 @@ MinecraftSrc.zip
 /mcp918/*
 !/mcp918/readme.txt
 !/mcp918/assetsIndexTransformer.json
+!/mcp918/*sh
+!/mcp918/*bat
 /rundir/*
 /##TEAVM.TMP##/*
