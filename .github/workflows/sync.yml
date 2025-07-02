@@ -1,0 +1,35 @@
+name: Weekly Upstream Sync
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+jobs:
+  sync-upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Git user
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Fetch and update upstream branch
+        run: |
+          git remote add upstream https://gitflic.ru/project/lax1dude/eaglercraft-1_8.git 2>/dev/null || git remote set-url upstream https://gitflic.ru/project/lax1dude/eaglercraft-1_8-workspace.git
+          if ! git fetch upstream; then
+            echo "gitflic fetch failed, trying GitHub mirror..."
+            git remote set-url upstream https://github.com/Eaglercraft-Archive/Eaglercraftx-1.8.8-src.git
+            git fetch upstream
+          fi
+          git checkout -B upstream upstream/main
+
+      - name: Push upstream branch
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push origin upstream --force
