@@ -1,7 +1,7 @@
 
-# EaglercraftX 1.8
+# eaglercraftex
 
-### Play Minecraft 1.8 in your browser, supports singleplayer and multiplayer
+### EaglercraftX extended by yours truly
 
 ![EaglercraftX 1.8 Screenshot Main Menu](https://deev.is/eagler/cors/eagler-1.8-u22-titlescreen-480p.png)
 
