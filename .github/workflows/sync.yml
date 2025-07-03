@@ -21,7 +21,7 @@ jobs:
 
       - name: Fetch and update upstream branch
         run: |
-          git remote add upstream https://gitflic.ru/project/lax1dude/eaglercraft-1_8.git 2>/dev/null || git remote set-url upstream https://gitflic.ru/project/lax1dude/eaglercraft-1_8-workspace.git
+          git remote add upstream https://gitflic.ru/project/lax1dude/eaglercraft-1_8.git 2>/dev/null || git remote set-url upstream https://gitflic.ru/project/lax1dude/eaglercraft-1_8.git
           if ! git fetch upstream; then
             echo "gitflic fetch failed, trying GitHub mirror..."
             git remote set-url upstream https://github.com/Eaglercraft-Archive/Eaglercraftx-1.8.8-src.git
