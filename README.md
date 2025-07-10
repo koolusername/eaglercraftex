@@ -1,7 +1,7 @@
 
-# EaglercraftX 1.8
+# eaglercraftex
 
-### Play Minecraft 1.8 in your browser, supports singleplayer and multiplayer
+### EaglercraftX extended by yours truly
 
 ![EaglercraftX 1.8 Screenshot Main Menu](https://deev.is/eagler/cors/eagler-1.8-u22-titlescreen-480p.png)
 
@@ -38,7 +38,7 @@
 
 ### To set up the development environment
 
-1. Prepare the required files in the mcp918 folder ([readme](mcp918/readme.txt))
+1. Run the `download_files` script in the [mcp918 folder](mcp918)
 2. Run the `build_init` script
 3. Run the `build_make_workspace` script
 

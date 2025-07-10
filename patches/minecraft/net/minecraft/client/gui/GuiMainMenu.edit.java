@@ -124,7 +124,7 @@
 ~ 			this.isDefault = false;
 ~ 		} else {
 ~ 			if (!EagRuntime.getConfiguration().isEnableMinceraft()) {
-~ 				this.isDefault = false;
+~ 				this.isDefault = true;
 ~ 			} else {
 ~ 				try {
 ~ 					byte[] bytes = EaglerInputStream.inputStreamToBytesQuiet(Minecraft.getMinecraft()
