@@ -8,7 +8,7 @@ public class EaglercraftVersion {
 	//////////////////////////////////////////////////////////////////////
 	
 	/// Customize these to fit your fork:
-
+	
 	public static final String projectForkName = "eaglercraftex";
 	public static final String projectForkVersion = "indev";
 	public static final String projectForkVendor = "project516";
