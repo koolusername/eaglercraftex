@@ -23,24 +23,27 @@
 ### To compile the latest version of the JavaScript client, on Windows:
 
 1. Make sure you have at least Java 11 installed and added to your PATH, it is recommended to use Java 17
-2. Download (clone) this repository to your computer
-3. Double click `CompileLatestClient.bat`, a GUI resembling a classic windows installer should open
-4. Follow the steps shown to you in the new window to finish compiling
+2. Make sure you have FFMPEG, either installed or have the compiled version available
+3. Download (clone) this repository to your computer
+4. Double click `CompileLatestClient.bat`, a GUI resembling a classic windows installer should open
+5. Follow the steps shown to you in the new window to finish compiling
 
 ### To compile the latest version of the JavaScript client, on Linux/macOS:
 
 1. Make sure you have at least Java 11 installed, it is recommended to use Java 17
-2. Download (clone) this repository to your computer
-3. Open a terminal in the folder the repository was cloned to
-4. Type `chmod +x CompileLatestClient.sh` and hit enter
-5. Type `./CompileLatestClient.sh` and hit enter, a GUI resembling a classic windows installer should open
-6. Follow the steps shown to you in the new window to finish compiling
+2. Make sure you have FFMPEG, either installed or have the compiled version available
+3. Download (clone) this repository to your computer
+4. Open a terminal in the folder the repository was cloned to
+5. Type `chmod +x CompileLatestClient.sh` and hit enter
+6. Type `./CompileLatestClient.sh` and hit enter, a GUI resembling a classic windows installer should open
+7. Follow the steps shown to you in the new window to finish compiling
 
 ### To set up the development environment
 
 1. Run the `download_files` script in the [mcp918 folder](mcp918)
 2. Run the `build_init` script
 3. Run the `build_make_workspace` script
+4. Open the workspace in your IDE and import the gradle project
 
 ## Browser Compatibility
 
