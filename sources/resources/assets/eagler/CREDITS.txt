@@ -1,4 +1,11 @@
 
+ eaglercraftex Developer
+ ~~~~~~~~~~~~~~~~~~~~~~~
+
+ project516:
+
+  - Creator of eaglercraftex
+
  EaglercraftX Developers
  ~~~~~~~~~~~~~~~~~~~~~~~
 
