@@ -128,6 +128,25 @@ POSSIBILITY OF SUCH DAMAGE.
 						websocketInstance.send(JSON.stringify({$:7,perm:"NOT_SET"}));
 					}
 				};
+				// Robust URL validation function
+				function isSafeURL(url) {
+					try {
+						var parsed = new URL(url, window.location.origin);
+						// Only allow http(s) URLs from the same origin or trusted domains
+						const allowedOrigins = [
+							window.location.origin,
+							"https://trusted.example.com"
+							// Add more trusted origins as needed
+						];
+						if (!["http:", "https:"].includes(parsed.protocol)) return false;
+						if (!allowedOrigins.includes(parsed.origin)) return false;
+						// Optionally, restrict paths or other criteria here
+						return true;
+					} catch (e) {
+						return false;
+					}
+				}
+
 				var handleHandshake = function(pkt) {
 					webviewOptions = {};
 					webviewOptions.contentMode = pkt.contentMode || "BLOB_BASED";
