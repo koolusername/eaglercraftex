@@ -1,4 +1,6 @@
 name: Weekly Upstream Sync
+permissions:
+  contents: write
 
 on:
   schedule:
