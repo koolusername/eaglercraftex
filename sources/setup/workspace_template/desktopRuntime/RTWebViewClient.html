@@ -133,14 +133,13 @@ POSSIBILITY OF SUCH DAMAGE.
 					try {
 						var parsed = new URL(url, window.location.origin);
 						// Only allow http(s) URLs from the same origin or trusted domains
-						const allowedOrigins = [
-							window.location.origin,
-							"https://trusted.example.com"
-							// Add more trusted origins as needed
+						const allowedURLs = [
+							"https://trusted.example.com/path/to/resource",
+							"https://another-trusted.example.com/allowed/path"
+							// Add more trusted URLs as needed
 						];
 						if (!["http:", "https:"].includes(parsed.protocol)) return false;
-						if (!allowedOrigins.includes(parsed.origin)) return false;
-						// Optionally, restrict paths or other criteria here
+						if (!allowedURLs.some(allowedURL => parsed.href.startsWith(allowedURL))) return false;
 						return true;
 					} catch (e) {
 						return false;
